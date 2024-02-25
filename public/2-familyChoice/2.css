@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.changeFamiglia {
+  font-family: "Trispace", sans-serif;
+  color: white;
+
+  font-weight: 300;
+  font-size: 16px;
+  position: absolute;
+  border-bottom: 1.5px solid currentColor;
+  text-decoration: none;
+  z-index: 4;
+  width: 50px;
+  right: 35%;
+  top: 50%;
+  background-color: transparent;
+  border-color: none;
+  border-style: none;
+}
+
+.familyButton {
+  position: absolute;
+  transform: translate(-50%, 0);
+  transform-origin: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  color: #02f886;
+  text-decoration: none;
+  font-size: 45px;
+  top: 70%;
+  z-index: 4;
+  background-color: transparent;
+  border-color: transparent;
+  /* cursor: pointer; */
+  vertical-align: middle;
+  transition: font-size 0.15s;
+}
+
+.familyButton:hover {
+  color: magenta;
+  font-size: 48px;
+  cursor: none;
+}
+
+.property1 {
+  position: fixed;
+  transform: translate(-50%, 0);
+  transform-origin: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  top: 75%;
+  left: 20%;
+  transform-origin: center;
+  font-family: "Trispace", sans-serif;
+}
+
+.property2 {
+  position: fixed;
+  transform: translate(-50%, 0);
+  transform-origin: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  top: 75%;
+  left: 50%;
+  transform-origin: center;
+  font-family: "Trispace", sans-serif;
+}
+
+.property3 {
+  position: fixed;
+  transform: translate(-50%, 0);
+  transform-origin: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  top: 75%;
+  left: 80%;
+  transform-origin: center;
+  font-family: "Trispace", sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#title {
+  position: fixed;
+  margin: 0px;
+  left: 50%;
+  bottom: 50px;
+  z-index: 4;
+  white-space: nowrap;
+  font-size: 50px;
+  font-family: "Syne", sans-serif;
+  color: #02f886;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  /* animation: blinker 1s linear infinite; */
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.scroll-down {
+  position: fixed;
+  left: 50%;
+  bottom: 10%;
+  z-index: 4;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "trispace";
+  color: magenta;
+  transform: translate(-50%, -50%);
+  animation: blinker 2s linear infinite;
+}

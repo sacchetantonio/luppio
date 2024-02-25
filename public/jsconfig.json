@@ -1,0 +1,10 @@
+{
+  "include": [
+    "*.js",
+    "libraries/*.js",
+    "c:\\Users\\39380\\.vscode\\extensions\\samplavigne.p5-vscode-1.2.8\\p5types\\global.d.ts",
+    "2-familyChoice/2.js",
+    "1-home/1.js",
+    "2-familyChoice/layout copy.js"
+  ]
+}

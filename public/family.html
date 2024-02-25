@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luppio - family</title>
+
+    <link rel="stylesheet" type="text/css" href="./2-familyChoice/2.css" />
+    <link rel="stylesheet" type="text/css" href="./2-familyChoice/layout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   
+
+    <script src="./libraries/p5.js"></script>
+    <script src="./libraries/p5.sound.js"></script>
+    <script src="./libraries/p5.easycam.js"></script>
+    <script src="./libraries/p5.3D.js"></script>
+    <script src="./libraries/p5.speech.js"></script>
+   
+   
+
+    <!-- LIBRERIA PER CURSOR -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" href="./addons/Favicon.png"></link>
+  </head>
+
+  <body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+
+    <button class="logoHome">
+      <a href="./index.html">
+        <img src="./addons/LuppioLoghino.gif" width="200px"
+      /></a>
+    </button>
+
+    <p class="property1">PROVIDES NOURISHMENT</p>
+    <p class="property2">PROVIDES OXYGEN</p>
+    <p class="property3">PROVIDES WATER</p>
+
+    <!-- about section start -->
+
+    <section id="about-section">
+      <input
+        class="x-button-about"
+        type="image"
+        src="./2-familyChoice/addons/x.png"
+        onclick="closeAbout()"
+        width="50px"
+      />
+
+      <div class="text-about-container">
+        <p class="text-about">
+          Luppio is not only a planet. It’s an academic project created at
+          Politecnico di Milano, during the
+          <a href="https://drawwithcode.github.io/" target="_blank">
+            Creative Coding course.</a
+          >
+
+          We want to make you forget your daily struggles for a few moments.
+          Have fun!
+        </p>
+      </div>
+
+      <div class="names-about-container">
+        <div>
+          <a href="https://www.instagram.com/faqtoto/"> Antonio Sacchet</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/gionasssi/"> Giovanni Bonassi</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/mariamartinuz/"> Maria Martinuz</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/defilippisss/">
+            Giuseppe Defilippis</a
+          >
+        </div>
+        <div>
+          <a href="https://www.instagram.com/yuripiemo/"> Yuri Piemontese</a>
+        </div>
+      </div>
+
+      <div class="image-about-container">
+        <div><img src="./addons/1.gif" width="200px" /></div>
+        <div><img src="./addons/2.gif" width="200px" /></div>
+        <div><img src="./addons/3.gif" width="200px" /></div>
+        <div><img src="./addons/5.gif" width="200px" /></div>
+        <div><img src="./addons/4.gif" width="200px" /></div>
+      </div>
+    </section>
+
+    <!-- about section end -->
+    <script src="./firebase.js"></script>
+    <script src="./2-familyChoice/2.js"></script>
+    <img src="./addons/LuppioLoading.gif" alt="laoding..." id="loadingImage" />
+
+    <span class="scroll-down">CHOOSE YOUR FAMILY</span>
+    
+  </body>
+</html>

@@ -1,0 +1,127 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  cursor: none;
+}
+
+canvas {
+  position: fixed;
+  transform: translate(-50%, 0%);
+  top: 5%;
+  left: 50%;
+  border-radius: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(81, 38, 194);
+}
+
+#cambia {
+  position: fixed;
+  left: 2.5%;
+  bottom: 60px;
+  padding: 4px 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #02f886;
+  text-transform: uppercase;
+  font-family: Trispace;
+  border: none;
+  transform: translate(0%, -50%);
+  color: rgb(81, 38, 194);
+  z-index: 1;
+}
+
+#cambia:hover {
+  background-color: magenta;
+  color: rgb(81, 38, 194);
+  cursor: none;
+}
+
+#salva {
+  position: fixed;
+  right: 2.5%;
+  bottom: 60px;
+  padding: 4px 12px;
+  font-family: Trispace;
+  font-size: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  background-color: #02f886;
+  border: none;
+  transform: translate(0%, -50%);
+  color: rgb(81, 38, 194);
+  z-index: 1;
+}
+
+#salva:hover {
+  background-color: magenta;
+  cursor: none;
+}
+
+#scrivinome {
+  position: fixed;
+  left: 2.5%;
+  bottom: 105px;
+  background-color: rgb(81, 38, 194);
+  border-radius: 30px;
+  padding: 2px 10px;
+  border-color: #02f886;
+  border-width: 2px;
+  border-style: solid;
+  color: #02f886;
+  transform: translate(0%, -50%);
+  font-size: 20px;
+  font-family: Trispace;
+  z-index: 1;
+}
+
+#scrivinome:hover {
+  border-color: magenta;
+  cursor: none;
+}
+
+#planted {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  left: 50%;
+  top: 50%;
+  width: 0%;
+  z-index: 4;
+}
+
+.dragMouse {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: 16px;
+  color: #02f886;
+  text-align: center;
+  top: 47%;
+  padding: 0px;
+  margin: 0px;
+  right: -5.5%;
+  transform-origin: center;
+  font-family: "Trispace", sans-serif;
+  z-index: 25;
+}
+
+/* #plant {
+  position: fixed;
+  right: 2.5%;
+  top: 90%;
+  padding: 4px 12px;
+  font-family: Trispace;
+  font-size: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  background-color: rgb(255, 170, 136);
+  border: none;
+  transform: translate(0%, -50%);
+  color: rgb(81, 38, 194);
+  z-index: 1;
+} */

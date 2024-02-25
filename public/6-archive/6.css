@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+canvas {
+  position: fixed;
+  transform: translate(-50%, 0%);
+  top: 0%;
+  left: 40%;
+  width: 150%;
+  overflow: hidden;
+}
+
+#dragMouse {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: 16px;
+  color: #02f886;
+  text-align: center;
+  top: 47%;
+  padding: 0px;
+  margin: 0px;
+  right: -5.5%;
+  transform-origin: center;
+  font-family: "Trispace", sans-serif;
+  z-index: 10;
+}
+#plant {
+  position: fixed;
+  left: 50%;
+  bottom: 80px;
+  padding: 4px 12px;
+  font-family: Trispace;
+  font-size: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  background-color: #02f886;
+  border: none;
+  transform: translate(-50%, -50%);
+  color: rgb(81, 38, 194);
+  z-index: 1;
+}
+
+#plant:hover {
+  background-color: magenta;
+  cursor: none;
+}

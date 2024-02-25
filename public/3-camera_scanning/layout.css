@@ -1,0 +1,347 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+.bakgroundPage {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(81, 38, 194);
+  z-index: -4;
+}
+
+.background {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgb(81, 38, 194);
+  z-index: -1;
+}
+
+#loadingImage {
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  position: fixed;
+
+  z-index: 5;
+}
+
+#aboutButton {
+  font-family: "Trispace", sans-serif;
+  text-transform: uppercase;
+  padding: 0px;
+  font-weight: 400;
+  color: white;
+  stroke: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  position: fixed;
+  right: 2.5%;
+  top: 5%;
+}
+
+#aboutButton:hover {
+  color: magenta;
+  cursor: none;
+}
+
+#gardenButton {
+  font-family: "Trispace", sans-serif;
+  text-transform: uppercase;
+  padding: 0px;
+  font-weight: 400;
+  color: white;
+  stroke: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  position: fixed;
+  right: 7.5%;
+  top: 5%;
+}
+
+#gardenButton:hover {
+  color: magenta;
+}
+
+.menuButton:hover {
+  color: magenta;
+}
+
+.menuButton:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: magenta;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menuButton:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.logoHome {
+  transform-origin: center;
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: transparent;
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 7%;
+}
+
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+.typingBox {
+  position: fixed;
+  left: 2.5%;
+  top: 5%;
+
+  width: 350px;
+
+  z-index: 1;
+}
+.container {
+  position: relative;
+  font-family: "Trispace", sans-serif;
+  background-color: rgb(81, 38, 194);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.typing {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(81, 38, 194);
+  color: white;
+}
+
+.hiders {
+  margin: 0;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+}
+
+.hiders p {
+  position: relative;
+  clear: both;
+  margin: 0;
+  float: right; /* makes animation go left-to-right */
+  width: 0; /* graceful degradation: if animation doesn't work, these are invisible by default */
+  background-color: rgb(81, 38, 194);
+
+  animation: typing 2s steps(30, end);
+  animation-fill-mode: both; /* load first keyframe on page load, leave on last frame at end */
+}
+
+.hiders p:nth-child(2) {
+  animation-delay: 2s;
+}
+.hiders p:nth-child(3) {
+  animation-delay: 4s;
+}
+.hiders p:nth-child(4) {
+  animation-delay: 6s;
+}
+.hiders p:nth-child(5) {
+  animation-delay: 8s;
+}
+.hiders p:nth-child(6) {
+  animation-delay: 10s;
+}
+.hiders p:nth-child(7) {
+  animation-delay: 12s;
+}
+.hiders p:nth-child(8) {
+  animation-delay: 14s;
+}
+.hiders p:nth-child(9) {
+  animation-delay: 16s;
+}
+.marqueeFondo {
+  position: fixed;
+  font-size: 16px;
+  color: #02f886;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transform-origin: center;
+  font-family: "Trispace", sans-serif;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  z-index: 3;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(81, 38, 194);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: magenta;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #02f886;
+}
+
+/* CURSOR */
+
+.cursor {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  background-color: red;
+  mix-blend-mode: exclusion;
+  z-index: 10000;
+  border: 2px solid red;
+  height: 30px;
+  width: 30px;
+}
+
+/* about section  */
+
+#about-section {
+  overflow: hidden;
+  left: 100%;
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+  background: #02f886;
+  z-index: 20;
+}
+
+.text-about {
+  overflow: hidden;
+  font-family: "Trispace", sans-serif;
+  padding: 0;
+  font-weight: 400;
+  color: rgb(81, 38, 194);
+  stroke: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  left: 2.5%;
+  /* top: 0.5%; */
+  width: 60%;
+}
+
+.text-about a:visited {
+  color: rgb(81, 38, 194);
+}
+
+.text-about a:hover {
+  color: white;
+  cursor: none;
+}
+
+.text-about a {
+  color: rgb(81, 38, 194);
+}
+
+.names-about-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 9%;
+  padding-right: 9%;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  top: 90%;
+}
+
+.names-about-container > div {
+  width: 100px;
+  line-height: 40px;
+  font-size: 15px;
+  font-family: trispace;
+  text-transform: uppercase;
+  transform-origin: center;
+
+  text-align: center;
+  line-height: 1.1;
+  font-weight: 300;
+  color: rgb(81, 38, 194);
+}
+
+.names-about-container > div > a:hover {
+  color: magenta;
+  font-weight: 500;
+  cursor: none;
+}
+
+.names-about-container > div > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(81, 38, 194);
+}
+
+.image-about-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 6%;
+  padding-right: 6%;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  top: 60%;
+}
+
+.image-about-container > div {
+  transform-origin: center;
+}
+
+.x-button-about {
+  overflow: hidden;
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.x-button-about:hover {
+  transform: rotate(90deg);
+  cursor: none;
+}
